@@ -1,0 +1,698 @@
+{
+  "patients": [
+    {
+      "id": "pat-1",
+      "hn": "HN 680142",
+      "fullName": "นายบุญมี พงษ์สวัสดิ์",
+      "age": 78,
+      "gender": "ชาย",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "careGroup": "ผู้ป่วยติดเตียง (Barthel ≤ 4)",
+      "diagnosis": "Stroke (อัมพฤกษ์ซีกขวา), HT, แผลกดทับระดับ 2 บริเวณก้นกบ",
+      "assignedVolunteerId": "vol-1",
+      "assignedVolunteerName": "น.ส.กานดา ศรีสุข",
+      "caregiverName": "นางสมพร พงษ์สวัสดิ์ (ภรรยา)",
+      "caregiverPhone": "086-331-9045",
+      "nextVisitDate": "2026-11-20",
+      "triageLevel": "critical",
+      "latestVitals": {
+        "sbp": 176,
+        "dbp": 102,
+        "pr": 108,
+        "temp": 38.4,
+        "spo2": 91,
+        "rr": 26,
+        "recordedAt": "2026-11-20T05:06:56.435Z"
+      },
+      "visitTargetPerMonth": 8,
+      "visitsCompletedThisMonth": 5,
+      "location": {
+        "lat": 13.8214,
+        "lng": 100.0592
+      }
+    },
+    {
+      "id": "pat-2",
+      "hn": "HN 680209",
+      "fullName": "นางละม่อม แก้วมณี",
+      "age": 71,
+      "gender": "หญิง",
+      "village": "หมู่ 5 บ้านท่าข้าม ต.ท่าศาลา",
+      "careGroup": "โรคเรื้อรังควบคุมยาก (DM/HT)",
+      "diagnosis": "DM Type 2 (ฉีดอินซูลิน), HT, ไตเสื่อมระยะ 3",
+      "assignedVolunteerId": "vol-1",
+      "assignedVolunteerName": "น.ส.กานดา ศรีสุข",
+      "caregiverName": "นายวิชัย แก้วมณี (บุตรชาย)",
+      "caregiverPhone": "084-901-2214",
+      "nextVisitDate": "2026-11-20",
+      "triageLevel": "watch",
+      "latestVitals": {
+        "sbp": 154,
+        "dbp": 92,
+        "pr": 88,
+        "temp": 36.9,
+        "spo2": 97,
+        "rr": 20,
+        "dtx": 248,
+        "recordedAt": "2026-11-20T03:55:56.435Z"
+      },
+      "visitTargetPerMonth": 4,
+      "visitsCompletedThisMonth": 3,
+      "location": {
+        "lat": 13.8165,
+        "lng": 100.0668
+      }
+    },
+    {
+      "id": "pat-3",
+      "hn": "HN 680315",
+      "fullName": "นายประสิทธิ์ ชูแสง",
+      "age": 66,
+      "gender": "ชาย",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "careGroup": "ผู้ป่วยติดบ้าน (IMC/ฟื้นฟู)",
+      "diagnosis": "Post-hip fracture ฟื้นฟูการเดินระยะกลาง (IMC)",
+      "assignedVolunteerId": "vol-1",
+      "assignedVolunteerName": "น.ส.กานดา ศรีสุข",
+      "caregiverName": "นางนิตยา ชูแสง (บุตรสาว)",
+      "caregiverPhone": "091-228-7410",
+      "nextVisitDate": "2026-11-21",
+      "triageLevel": "normal",
+      "latestVitals": {
+        "sbp": 126,
+        "dbp": 78,
+        "pr": 74,
+        "temp": 36.6,
+        "spo2": 98,
+        "rr": 18,
+        "recordedAt": "2026-11-20T02:10:56.435Z"
+      },
+      "visitTargetPerMonth": 4,
+      "visitsCompletedThisMonth": 4,
+      "location": {
+        "lat": 13.8242,
+        "lng": 100.0651
+      }
+    },
+    {
+      "id": "pat-4",
+      "hn": "HN 680418",
+      "fullName": "นางทองคำ อินทร์แก้ว",
+      "age": 82,
+      "gender": "หญิง",
+      "village": "หมู่ 1 บ้านกลาง ต.ท่าศาลา",
+      "careGroup": "ผู้ป่วยประคับประคอง (Palliative)",
+      "diagnosis": "End-stage COPD, ใช้ออกซิเจนที่บ้าน (Home O2)",
+      "assignedVolunteerId": "vol-2",
+      "assignedVolunteerName": "นายสมชาย ใจดี",
+      "caregiverName": "น.ส.อรุณี อินทร์แก้ว (หลาน)",
+      "caregiverPhone": "087-552-6198",
+      "nextVisitDate": "2026-11-20",
+      "triageLevel": "normal",
+      "latestVitals": {
+        "sbp": 122,
+        "dbp": 74,
+        "pr": 80,
+        "temp": 36.7,
+        "spo2": 96,
+        "rr": 20,
+        "recordedAt": "2026-11-20T00:00:56.435Z"
+      },
+      "visitTargetPerMonth": 6,
+      "visitsCompletedThisMonth": 4,
+      "location": {
+        "lat": 13.8148,
+        "lng": 100.0556
+      }
+    },
+    {
+      "id": "pat-5",
+      "hn": "HN 680527",
+      "fullName": "นายเสนาะ วรรณวงศ์",
+      "age": 74,
+      "gender": "ชาย",
+      "village": "หมู่ 2 บ้านคลองใหม่ ต.ท่าศาลา",
+      "careGroup": "ผู้ป่วยติดเตียง (Barthel ≤ 4)",
+      "diagnosis": "Alzheimer, คาสายให้อาหาร (NG Tube) และสายสวนปัสสาวะ",
+      "assignedVolunteerId": "vol-2",
+      "assignedVolunteerName": "นายสมชาย ใจดี",
+      "caregiverName": "นางประไพ วรรณวงศ์ (ภรรยา)",
+      "caregiverPhone": "082-119-4830",
+      "nextVisitDate": "2026-11-22",
+      "triageLevel": "normal",
+      "latestVitals": {
+        "sbp": 130,
+        "dbp": 80,
+        "pr": 76,
+        "temp": 36.8,
+        "spo2": 98,
+        "rr": 18,
+        "recordedAt": "2026-11-19T05:20:56.435Z"
+      },
+      "visitTargetPerMonth": 6,
+      "visitsCompletedThisMonth": 3,
+      "location": {
+        "lat": 13.8266,
+        "lng": 100.0549
+      }
+    }
+  ],
+  "visitLogs": [
+    {
+      "id": "vis-101",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "patientHn": "HN 680142",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-20T05:06:56.435Z",
+      "durationMinutes": 45,
+      "vitals": {
+        "sbp": 176,
+        "dbp": 102,
+        "pr": 108,
+        "temp": 38.4,
+        "spo2": 91,
+        "rr": 26
+      },
+      "symptoms": [
+        "หายใจหอบเหนื่อย / ออกซิเจนต่ำ",
+        "ไข้สูง ≥ 38.0°C / หนาวสั่น"
+      ],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "พลิกตะแคงตัวและดูแลแผลกดทับ",
+        "ดูดเสมหะและดูแลทางเดินหายใจ"
+      ],
+      "clinicalNote": "ผู้ป่วยมีเสมหะเหนียว หายใจหอบกว่าปกติ ค่า SpO2 ลดเหลือ 91% แจ้งพยาบาลประจำ รพ.สต. ทันที",
+      "triageLevel": "critical",
+      "alertTriggered": true,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางสมพร พงษ์สวัสดิ์",
+      "inspectionStatus": "pending"
+    },
+    {
+      "id": "vis-102",
+      "patientId": "pat-2",
+      "patientName": "นางละม่อม แก้วมณี",
+      "patientHn": "HN 680209",
+      "village": "หมู่ 5 บ้านท่าข้าม ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-20T03:55:56.435Z",
+      "durationMinutes": 35,
+      "vitals": {
+        "sbp": 154,
+        "dbp": 92,
+        "pr": 88,
+        "temp": 36.9,
+        "spo2": 97,
+        "rr": 20,
+        "dtx": 248
+      },
+      "symptoms": [
+        "ระดับน้ำตาลต่ำ (< 70) หรือสูง (> 250)"
+      ],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ดูแลการรับประทานยาและฉีดอินซูลิน",
+        "ให้คำแนะนำผู้ดูแลและประเมินความเครียดญาติ"
+      ],
+      "clinicalNote": "ผู้ป่วยรับประทานผลไม้รสหวานเมื่อวาน เจาะ DTX หลังอาหารเช้าได้ 248 mg/dL แนะนำคุมอาหารและนัดตรวจซ้ำ",
+      "triageLevel": "watch",
+      "alertTriggered": true,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นายวิชัย แก้วมณี",
+      "inspectionStatus": "pending"
+    },
+    {
+      "id": "vis-103",
+      "patientId": "pat-3",
+      "patientName": "นายประสิทธิ์ ชูแสง",
+      "patientHn": "HN 680315",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-20T02:10:56.435Z",
+      "durationMinutes": 40,
+      "vitals": {
+        "sbp": 126,
+        "dbp": 78,
+        "pr": 74,
+        "temp": 36.6,
+        "spo2": 98,
+        "rr": 18
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "กายภาพบำบัดและฟื้นฟูกล้ามเนื้อ"
+      ],
+      "clinicalNote": "ฝึกเดินด้วย Walker ได้ระยะทาง 15 เมตร ไม่มีอาการเวียนศีรษะ แผลผ่าตัดแห้งดี",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางนิตยา ชูแสง",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-20T04:20:56.435Z",
+      "inspectorNote": "บันทึกครบถ้วน สัญญาณชีพปกติ ติดตามฝึกเดินต่อเนื่องสัปดาห์หน้า"
+    },
+    {
+      "id": "vis-104",
+      "patientId": "pat-4",
+      "patientName": "นางทองคำ อินทร์แก้ว",
+      "patientHn": "HN 680418",
+      "village": "หมู่ 1 บ้านกลาง ต.ท่าศาลา",
+      "volunteerId": "vol-2",
+      "volunteerName": "นายสมชาย ใจดี",
+      "visitDate": "2026-11-20T00:00:56.435Z",
+      "durationMinutes": 30,
+      "vitals": {
+        "sbp": 122,
+        "dbp": 74,
+        "pr": 80,
+        "temp": 36.7,
+        "spo2": 96,
+        "rr": 20
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ดูดเสมหะและดูแลทางเดินหายใจ"
+      ],
+      "clinicalNote": "เปิดออกซิเจน 2 LPM ต่อเนื่อง ผู้ป่วยพักผ่อนได้",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": false,
+      "caregiverSignerName": "",
+      "inspectionStatus": "revision",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-20T03:20:56.435Z",
+      "inspectorNote": "กรุณาให้ผู้ดูแลลงนามรับรองการเยี่ยม และระบุอัตราการไหลออกซิเจนที่บ้านให้ชัดเจนในบันทึก"
+    },
+    {
+      "id": "vis-105",
+      "patientId": "pat-5",
+      "patientName": "นายเสนาะ วรรณวงศ์",
+      "patientHn": "HN 680527",
+      "village": "หมู่ 2 บ้านคลองใหม่ ต.ท่าศาลา",
+      "volunteerId": "vol-2",
+      "volunteerName": "นายสมชาย ใจดี",
+      "visitDate": "2026-11-18T05:20:56.435Z",
+      "durationMinutes": 40,
+      "vitals": {
+        "sbp": 130,
+        "dbp": 80,
+        "pr": 76,
+        "temp": 36.8,
+        "spo2": 98,
+        "rr": 18
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ดูแลสายสวนปัสสาวะ / สายให้อาหาร"
+      ],
+      "clinicalNote": "สาย NG tube และสายสวนปัสสาวะไหลสะดวกดี ปัสสาวะสีเหลืองใส",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางประไพ วรรณวงศ์",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-19T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    },
+    {
+      "id": "vis-106",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "patientHn": "HN 680142",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-12T05:20:56.435Z",
+      "durationMinutes": 45,
+      "vitals": {
+        "sbp": 148,
+        "dbp": 90,
+        "pr": 86,
+        "temp": 37.1,
+        "spo2": 95,
+        "rr": 22
+      },
+      "symptoms": [
+        "แผลมีหนอง / บวมแดง / กลิ่นเหม็น"
+      ],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "พลิกตะแคงตัวและดูแลแผลกดทับ"
+      ],
+      "clinicalNote": "แผลกดทับก้นกบขอบแผลแดงเล็กน้อย ทำความสะอาดแผลด้วย NSS และแนะนำญาติพลิกตัวทุก 2 ชม.",
+      "triageLevel": "watch",
+      "alertTriggered": true,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางสมพร พงษ์สวัสดิ์",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-13T05:20:56.435Z",
+      "inspectorNote": "ติดตามแผลต่อเนื่องดีมาก"
+    },
+    {
+      "id": "vis-107",
+      "patientId": "pat-3",
+      "patientName": "นายประสิทธิ์ ชูแสง",
+      "patientHn": "HN 680315",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-11T05:20:56.435Z",
+      "durationMinutes": 35,
+      "vitals": {
+        "sbp": 128,
+        "dbp": 76,
+        "pr": 72,
+        "temp": 36.5,
+        "spo2": 98,
+        "rr": 18
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "กายภาพบำบัดและฟื้นฟูกล้ามเนื้อ"
+      ],
+      "clinicalNote": "ฝึกยืนทรงตัวและเหยียดข้อเข่าได้คล่องขึ้น",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางนิตยา ชูแสง",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-12T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    },
+    {
+      "id": "vis-108",
+      "patientId": "pat-4",
+      "patientName": "นางทองคำ อินทร์แก้ว",
+      "patientHn": "HN 680418",
+      "village": "หมู่ 1 บ้านกลาง ต.ท่าศาลา",
+      "volunteerId": "vol-2",
+      "volunteerName": "นายสมชาย ใจดี",
+      "visitDate": "2026-11-09T05:20:56.435Z",
+      "durationMinutes": 40,
+      "vitals": {
+        "sbp": 134,
+        "dbp": 82,
+        "pr": 92,
+        "temp": 37.2,
+        "spo2": 93,
+        "rr": 24
+      },
+      "symptoms": [
+        "หายใจหอบเหนื่อย / ออกซิเจนต่ำ"
+      ],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ดูดเสมหะและดูแลทางเดินหายใจ"
+      ],
+      "clinicalNote": "เหนื่อยเล็กน้อยหลังอาบน้ำ ปรับออกซิเจนตามแผนแล้ว SpO2 กลับมา 96%",
+      "triageLevel": "critical",
+      "alertTriggered": true,
+      "caregiverSigned": true,
+      "caregiverSignerName": "น.ส.อรุณี อินทร์แก้ว",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-10T05:20:56.435Z",
+      "inspectorNote": "รายงานและประสานงานรวดเร็วดีมาก"
+    },
+    {
+      "id": "vis-109",
+      "patientId": "pat-2",
+      "patientName": "นางละม่อม แก้วมณี",
+      "patientHn": "HN 680209",
+      "village": "หมู่ 5 บ้านท่าข้าม ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-11-05T05:20:56.435Z",
+      "durationMinutes": 30,
+      "vitals": {
+        "sbp": 138,
+        "dbp": 84,
+        "pr": 80,
+        "temp": 36.7,
+        "spo2": 98,
+        "rr": 18,
+        "dtx": 162
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ดูแลการรับประทานยาและฉีดอินซูลิน"
+      ],
+      "clinicalNote": "ฉีดอินซูลินถูกต้องตามขนาด น้ำตาลควบคุมได้ดีขึ้น",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นายวิชัย แก้วมณี",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-06T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    },
+    {
+      "id": "vis-110",
+      "patientId": "pat-5",
+      "patientName": "นายเสนาะ วรรณวงศ์",
+      "patientHn": "HN 680527",
+      "village": "หมู่ 2 บ้านคลองใหม่ ต.ท่าศาลา",
+      "volunteerId": "vol-2",
+      "volunteerName": "นายสมชาย ใจดี",
+      "visitDate": "2026-11-04T05:20:56.435Z",
+      "durationMinutes": 35,
+      "vitals": {
+        "sbp": 126,
+        "dbp": 78,
+        "pr": 74,
+        "temp": 36.6,
+        "spo2": 98,
+        "rr": 18
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "ให้คำแนะนำผู้ดูแลและประเมินความเครียดญาติ"
+      ],
+      "clinicalNote": "สอนญาติจัดท่าศีรษะสูง 30 องศาหลังให้อาหารทางสาย",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางประไพ วรรณวงศ์",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-11-05T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    },
+    {
+      "id": "vis-111",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "patientHn": "HN 680142",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-10-29T05:20:56.435Z",
+      "durationMinutes": 40,
+      "vitals": {
+        "sbp": 152,
+        "dbp": 94,
+        "pr": 84,
+        "temp": 36.8,
+        "spo2": 96,
+        "rr": 20
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "พลิกตะแคงตัวและดูแลแผลกดทับ"
+      ],
+      "clinicalNote": "ความดันค่อนข้างสูง แนะนำลดอาหารเค็มและรับประทานยาตรงเวลา",
+      "triageLevel": "watch",
+      "alertTriggered": true,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางสมพร พงษ์สวัสดิ์",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-10-30T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    },
+    {
+      "id": "vis-112",
+      "patientId": "pat-3",
+      "patientName": "นายประสิทธิ์ ชูแสง",
+      "patientHn": "HN 680315",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitDate": "2026-10-27T05:20:56.435Z",
+      "durationMinutes": 35,
+      "vitals": {
+        "sbp": 124,
+        "dbp": 76,
+        "pr": 76,
+        "temp": 36.5,
+        "spo2": 98,
+        "rr": 18
+      },
+      "symptoms": [],
+      "activities": [
+        "วัดและประเมินสัญญาณชีพ",
+        "กายภาพบำบัดและฟื้นฟูกล้ามเนื้อ"
+      ],
+      "clinicalNote": "ประเมินกำลังกล้ามเนื้อขาขวาดีขึ้น ไม่มีอาการปวดข้อสะโพก",
+      "triageLevel": "normal",
+      "alertTriggered": false,
+      "caregiverSigned": true,
+      "caregiverSignerName": "นางนิตยา ชูแสง",
+      "inspectionStatus": "approved",
+      "inspectorName": "พว.สุภาวดี รัตนชัย",
+      "inspectedAt": "2026-10-28T05:20:56.435Z",
+      "inspectorNote": "ตรวจรับงานเรียบร้อย"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alt-1",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "village": "หมู่ 4 บ้านหนองบัว ต.ท่าศาลา",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitLogId": "vis-101",
+      "severity": "critical",
+      "title": "สัญญาณชีพวิกฤต: SpO2 91% และไข้สูง 38.4°C",
+      "detail": "ผู้ป่วยมีเสมหะเหนียว หายใจหอบเหนื่อย SpO2 ลดเหลือ 91% ความดัน 176/102 mmHg",
+      "vitalsSummary": "BP 176/102 · PR 108 · T 38.4°C · SpO2 91% · RR 26",
+      "createdAt": "2026-11-20T05:06:56.435Z",
+      "status": "active"
+    },
+    {
+      "id": "alt-2",
+      "patientId": "pat-2",
+      "patientName": "นางละม่อม แก้วมณี",
+      "village": "หมู่ 5 บ้านท่าข้าม ต.ท่าศาลา",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "visitLogId": "vis-102",
+      "severity": "watch",
+      "title": "เฝ้าระวัง: น้ำตาลปลายนิ้วสูง DTX 248 mg/dL",
+      "detail": "ความดันโลหิต 154/92 mmHg และระดับน้ำตาลสูงกว่าเกณฑ์เป้าหมาย",
+      "vitalsSummary": "BP 154/92 · PR 88 · DTX 248 mg/dL",
+      "createdAt": "2026-11-20T03:55:56.435Z",
+      "status": "acknowledged",
+      "acknowledgedBy": "พว.สุภาวดี รัตนชัย",
+      "acknowledgedAt": "2026-11-20T04:30:56.435Z",
+      "nurseOrder": "ให้ อสพ. นัดเจาะ DTX ซ้ำพรุ่งนี้เช้าก่อนอาหาร และเน้นย้ำญาติงดผลไม้หวาน"
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "vol-1",
+      "name": "น.ส.กานดา ศรีสุข",
+      "code": "อสพ-0412",
+      "area": "หมู่ 4 บ้านหนองบัว และ หมู่ 5 บ้านท่าข้าม",
+      "phone": "089-412-8831"
+    },
+    {
+      "id": "vol-2",
+      "name": "นายสมชาย ใจดี",
+      "code": "อสพ-0419",
+      "area": "หมู่ 1 บ้านกลาง และ หมู่ 2 บ้านคลองใหม่",
+      "phone": "081-775-3092"
+    }
+  ],
+  "caregivers": [
+    {
+      "id": "cg-1",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "name": "นางสมพร พงษ์สวัสดิ์",
+      "relation": "ภรรยา",
+      "phone": "086-331-9045",
+      "isPrimary": true
+    },
+    {
+      "id": "cg-1b",
+      "patientId": "pat-1",
+      "patientName": "นายบุญมี พงษ์สวัสดิ์",
+      "name": "นายมานพ พงษ์สวัสดิ์",
+      "relation": "บุตรชาย",
+      "phone": "089-114-5520",
+      "isPrimary": false
+    },
+    {
+      "id": "cg-2",
+      "patientId": "pat-2",
+      "patientName": "นางละม่อม แก้วมณี",
+      "name": "นายวิชัย แก้วมณี",
+      "relation": "บุตรชาย",
+      "phone": "084-901-2214",
+      "isPrimary": true
+    },
+    {
+      "id": "cg-3",
+      "patientId": "pat-3",
+      "patientName": "นายประสิทธิ์ ชูแสง",
+      "name": "นางนิตยา ชูแสง",
+      "relation": "บุตรสาว",
+      "phone": "091-228-7410",
+      "isPrimary": true
+    },
+    {
+      "id": "cg-4",
+      "patientId": "pat-4",
+      "patientName": "นางทองคำ อินทร์แก้ว",
+      "name": "น.ส.อรุณี อินทร์แก้ว",
+      "relation": "หลาน",
+      "phone": "087-552-6198",
+      "isPrimary": true
+    },
+    {
+      "id": "cg-5",
+      "patientId": "pat-5",
+      "patientName": "นายเสนาะ วรรณวงศ์",
+      "name": "นางประไพ วรรณวงศ์",
+      "relation": "ภรรยา",
+      "phone": "082-119-4830",
+      "isPrimary": true
+    }
+  ],
+  "inspector": {
+    "name": "พว.สุภาวดี รัตนชัย",
+    "position": "พยาบาลวิชาชีพชำนาญการ (Care Manager)",
+    "facility": "รพ.สต.ท่าศาลา อ.เมือง",
+    "directorName": "นายธนากร ศิริวัฒน์ (ผอ.รพ.สต.ท่าศาลา)"
+  },
+  "systemSettings": {
+    "requireCaregiverSignature": false,
+    "requireCaregiverSignerName": true,
+    "defaultVisitDurationMinutes": 35,
+    "autoAlertOnWatchLevel": true
+  },
+  "acceptanceBatches": [
+    {
+      "id": "acc-1795152192555",
+      "monthKey": "2026-11",
+      "monthLabel": "พฤศจิกายน 2569",
+      "volunteerId": "vol-1",
+      "volunteerName": "น.ส.กานดา ศรีสุข",
+      "approvedVisitCount": 6,
+      "totalHours": 3.8,
+      "certifiedBy": "พว.สุภาวดี รัตนชัย",
+      "directorName": "นายธนากร ศิริวัฒน์ (ผอ.รพ.สต.ท่าศาลา)",
+      "certifiedAt": "2026-11-20T05:23:12.555Z",
+      "remark": "ตรวจรับงานครบถ้วน จำนวน 6 ครั้ง (3.8 ชั่วโมง)"
+    }
+  ],
+  "serverTime": "2026-11-20T05:37:58.625Z"
+}

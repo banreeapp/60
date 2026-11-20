@@ -1,0 +1,8 @@
+{
+  "name": "อสพ. CareConnect — ระบบดูแลต่อเนื่องและตรวจรับงาน",
+  "description": "ระบบบันทึกข้อมูลการดูแลต่อเนื่อง ติดตามอาการผู้ป่วยแบบเรียลไทม์ แจ้งเตือนฉุกเฉิน และตรวจรับงานอาสาพยาบาลชุมชน (อสพ.)",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
