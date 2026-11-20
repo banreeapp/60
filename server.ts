@@ -2,9 +2,9 @@ import 'dotenv/config';
 import express from 'express';
 import http from 'http';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { WebSocketServer, WebSocket } from 'ws';
-import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 import {
   evaluateClinicalTriage,
@@ -22,8 +22,26 @@ import {
   type WorkAcceptanceBatch,
 } from './src/types.ts';
 
-const PORT = 3000;
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const PORT = Number(process.env.PORT) || 3000;
+
+function resolveWritableDataDir(): string {
+  const preferred = path.resolve(process.cwd(), 'data');
+  try {
+    if (!fs.existsSync(preferred)) {
+      fs.mkdirSync(preferred, { recursive: true });
+    }
+    fs.accessSync(preferred, fs.constants.W_OK);
+    return preferred;
+  } catch {
+    const fallback = path.join(os.tmpdir(), 'careconnect-data');
+    if (!fs.existsSync(fallback)) {
+      fs.mkdirSync(fallback, { recursive: true });
+    }
+    return fallback;
+  }
+}
+
+const DATA_DIR = resolveWritableDataDir();
 const DB_FILE = path.join(DATA_DIR, 'care-db.json');
 const BACKUPS_DIR = path.join(DATA_DIR, 'backups');
 
@@ -1485,6 +1503,7 @@ async function startServer() {
   });
 
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',

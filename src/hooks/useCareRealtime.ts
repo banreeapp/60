@@ -68,17 +68,48 @@ export function useCareRealtime() {
     }, 5000);
   }, []);
 
-  const fetchInitialState = useCallback(async () => {
-    try {
-      const res = await fetch('/api/state');
-      if (!res.ok) throw new Error('ไม่สามารถโหลดข้อมูลระบบได้');
-      const data = (await res.json()) as SystemState;
-      setState(data);
+  const fetchInitialState = useCallback(async (manual = false) => {
+    if (manual) {
+      setLoading(true);
       setError(null);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์');
-    } finally {
-      setLoading(false);
+    }
+
+    const maxAttempts = manual ? 2 : 4;
+    const retryDelays = [800, 1500, 2500];
+
+    for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+      try {
+        const res = await fetch('/api/state', { cache: 'no-store' });
+        const contentType = res.headers.get('content-type') || '';
+
+        if (!res.ok) {
+          const isTransient = res.status === 502 || res.status === 503 || res.status === 504;
+          if (isTransient && attempt < maxAttempts - 1) {
+            await new Promise((r) => setTimeout(r, retryDelays[attempt] ?? 1500));
+            continue;
+          }
+          throw new Error(`ไม่สามารถโหลดข้อมูลระบบได้ (รหัส ${res.status})`);
+        }
+
+        if (!contentType.includes('application/json')) {
+          throw new Error(
+            'ไม่พบ API เซิร์ฟเวอร์ (/api/state) กรุณาเปิดแอปผ่านโหมด Full-Stack (npm run dev / npm start)'
+          );
+        }
+
+        const data = (await res.json()) as SystemState;
+        setState(data);
+        setError(null);
+        setLoading(false);
+        return;
+      } catch (err) {
+        if (attempt < maxAttempts - 1) {
+          await new Promise((r) => setTimeout(r, retryDelays[attempt] ?? 1500));
+          continue;
+        }
+        setError(err instanceof Error ? err.message : 'เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์');
+        setLoading(false);
+      }
     }
   }, []);
 
@@ -86,6 +117,7 @@ export function useCareRealtime() {
     (event: RealtimeServerEvent) => {
       if (event.type === 'state:sync') {
         setState(event.state);
+        setError(null);
         setLoading(false);
         return;
       }
@@ -648,7 +680,7 @@ export function useCareRealtime() {
     backups,
     toastMessage,
     dismissToast: () => setToastMessage(null),
-    reload: fetchInitialState,
+    reload: () => fetchInitialState(true),
     submitVisit,
     triggerSos,
     updateAlert,
